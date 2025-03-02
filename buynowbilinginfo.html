@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now - Car Purchase</title>
+    <link rel="stylesheet" href="car hub.css">
+
+</head>
+<body>
+    <!-- NAVIGATION MENU -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="services.html">Our Services</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+}
+</style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Buy or Rent Now - Car Purchase</h2>
+    <form action="#" method="POST">
+        <!-- Category Dropdown -->
+        <label for="category">Choose Action</label>
+        <select id="category" name="category" onchange="toggleForm()" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="buy">Buy Now</option>
+            <option value="rent">Rent Now</option>
+        </select>
+
+        <!-- Buy Now Form -->
+        <div id="buy-form">
+            <!-- Vehicle Details -->
+            <label for="car-model">Car Model</label>
+            <input type="text" id="car-model" name="car-model" value="Toyota Camry 2023" readonly>
+
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" value="$25,000" readonly>
+
+            <!-- Personal Information -->
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <!-- Payment Information -->
+            <label for="cardholder-name">Cardholder Name</label>
+            <input type="text" id="cardholder-name" name="cardholder-name" required>
+
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" required>
+
+            <label for="expiry-date">Expiration Date</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <!-- Terms and Conditions -->
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+            </div>
+        </div>
+
+        <!-- Rent Now Form -->
+        <div id="rent-form">
+            <!-- Vehicle Details -->
+            <label for="rent-car-model">Car Model</label>
+            <input type="text" id="rent-car-model" name="rent-car-model" value="Toyota Camry 2023" readonly>
+
+            <label for="rent-price">Rental Price (per day)</label>
+            <input type="text" id="rent-price" name="rent-price" value="$100" readonly>
+
+            <!-- Rental Period -->
+            <label for="rental-period">Rental Period (Days)</label>
+            <input type="number" id="rental-period" name="rental-period" min="1" required>
+
+            <!-- Personal Information -->
+            <label for="rent-full-name">Full Name</label>
+            <input type="text" id="rent-full-name" name="rent-full-name" required>
+
+            <label for="rent-email">Email Address</label>
+            <input type="email" id="rent-email" name="rent-email" required>
+
+            <label for="rent-phone">Phone Number</label>
+            <input type="tel" id="rent-phone" name="rent-phone" required>
+
+            <label for="rent-address">Address</label>
+            <textarea id="rent-address" name="rent-address" rows="3" required></textarea>
+
+            <!-- Payment Information -->
+            <label for="rent-cardholder-name">Cardholder Name</label>
+            <input type="text" id="rent-cardholder-name" name="rent-cardholder-name" required>
+
+            <label for="rent-card-number">Card Number</label>
+            <input type="text" id="rent-card-number" name="rent-card-number" required>
+
+            <label for="rent-expiry-date">Expiration Date</label>
+            <input type="text" id="rent-expiry-date" name="rent-expiry-date" placeholder="MM/YY" required>
+
+            <label for="rent-cvv">CVV</label>
+            <input type="text" id="rent-cvv" name="rent-cvv" required>
+
+            <!-- Terms and Conditions -->
+            <div class="terms">
+                <input type="checkbox" id="rent-terms" name="rent-terms" required>
+                <label for="rent-terms">I agree to the <a href="#">Terms and Conditions</a></label>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Proceed">
+    </form>
+</div>
+
+</body>
+</html>
